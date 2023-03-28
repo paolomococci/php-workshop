@@ -14,3 +14,16 @@ function getNumber(string $stringNumber): string {
     'nine' => '9',
   };
 }
+
+$sample = [
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine'
+];
