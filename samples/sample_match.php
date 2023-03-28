@@ -15,7 +15,7 @@ function getNumber(string $stringNumber): string {
   };
 }
 
-$sample = [
+$samples = [
   'zero',
   'one',
   'two',
@@ -27,3 +27,7 @@ $sample = [
   'eight',
   'nine'
 ];
+
+foreach ($samples as $sample) {
+  echo 'The number: ' . $sample . ' is ' . getNumber($sample) . '\n';
+}
