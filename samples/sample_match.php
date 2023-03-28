@@ -29,5 +29,7 @@ $samples = [
 ];
 
 foreach ($samples as $sample) {
-  echo 'The number: ' . $sample . ' is ' . getNumber($sample) . '\n';
+  echo 'the word ' . $sample . ' corresponds to ' . getNumber($sample) . "\n";
 }
+
+echo "\n";
