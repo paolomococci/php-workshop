@@ -16,3 +16,5 @@ $someone->id = 111;
 $someone->code = 222;
 //$someone->name = 1;
 $someone->name = 'qwerty';
+
+var_dump($someone);
