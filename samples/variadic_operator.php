@@ -10,3 +10,9 @@ class SomeOne {
       echo "ID: $id" . "Name: $name";
   }
 }
+
+class SomeTwo extends SomeOne {
+  public function someone(...$some): void {
+      var_dump($some);
+  }
+}
