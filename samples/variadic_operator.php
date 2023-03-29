@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 class SomeOne {
-  public function someone(
+  public static function someone(
     int $id,
     string $name
   ): void {
@@ -12,8 +12,8 @@ class SomeOne {
 }
 
 class SomeTwo extends SomeOne {
-  public function someone(...$some): void {
-      var_dump($some);
+  public static function someone(...$args): void {
+      var_dump($args);
   }
 }
 
