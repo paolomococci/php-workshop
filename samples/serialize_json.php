@@ -21,3 +21,8 @@ class Serialize
         return serialize($data);
     }
 }
+
+$allowed = [
+    'json' => 'Response',
+    'text' => 'Serialize',
+];
