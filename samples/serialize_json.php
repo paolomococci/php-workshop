@@ -4,7 +4,8 @@ declare (strict_types = 1);
 
 class Response
 {
-    public function formalize($data) {
+    public function render($data)
+    {
         return json_encode(
             $data,
             JSON_PRETTY_PRINT
@@ -14,5 +15,9 @@ class Response
 
 class Serialize
 {
-    public function formalize() {}
+    public function render(
+        $data
+    ) {
+        return serialize($data);
+    }
 }
