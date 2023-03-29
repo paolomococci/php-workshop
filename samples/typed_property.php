@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use SomeOne as GlobalSomeOne;
-
 class Someone {
     public int $id = 0;
     public int $code = 0;
