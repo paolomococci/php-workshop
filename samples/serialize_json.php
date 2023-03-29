@@ -26,3 +26,14 @@ $allowed = [
     'json' => 'Response',
     'text' => 'Serialize',
 ];
+
+$data = [
+    'id' => 123456789,
+    'name' => 'something',
+    'description' => 'description of something',
+    'warehouse' => [
+        'stock' => 150,
+        'arriving' => 300,
+        'unit price' => 0.46,
+    ],
+];
