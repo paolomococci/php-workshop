@@ -14,3 +14,5 @@ $products = [
     'some6',
   ]
 ];
+
+$pattern = "%10s : %d\n";
