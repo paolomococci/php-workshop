@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 class SomeOne {
     const LOG_FILE = __DIR__ . '/tests/test_one.log';
-    protected static function logVar(object $v) {
-        $item = date('Y-m-d') . ':' . var_export($v, TRUE);
+    protected static function logVar(object $argument) {
+        $item = date('Y-m-d') . ':' . var_export($argument, TRUE);
         return error_log($item, 3, self::LOG_FILE);
     }
 }
 
 class SomeTwo extends SomeOne {
-    public static function logVar(mixed $v) {
-        $item = date('Y-m-d') . ':' . var_export($v, TRUE);
+    public static function logVar(mixed $argument) {
+        $item = date('Y-m-d') . ':' . var_export($argument, TRUE);
         return error_log($item, 3, self::LOG_FILE);
     }
 }
@@ -37,3 +37,5 @@ foreach ($tests as $test) {
 }
 
 readfile(SomeOne::LOG_FILE);
+
+echo "\n";
