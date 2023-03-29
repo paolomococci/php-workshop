@@ -8,12 +8,12 @@ $original = [
     'some_4',
     'some_3',
     'some_two',
-    'some_one'
+    'some_one',
 ];
 
 $replacement = [
     'some_2',
-    'some_1'
+    'some_1',
 ];
 
 $result = array_splice($original, 4, count($original), $replacement);
