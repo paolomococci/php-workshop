@@ -15,3 +15,8 @@ $replacement = [
     'some_2',
     'some_1'
 ];
+
+$result = array_splice($original, 4, count($original), $replacement);
+
+var_dump($original);
+var_dump($result);
