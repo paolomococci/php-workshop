@@ -16,3 +16,5 @@ class SomeTwo extends SomeOne {
       var_dump($some);
   }
 }
+
+$someTwo = new SomeTwo();
