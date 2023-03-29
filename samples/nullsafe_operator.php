@@ -16,3 +16,14 @@ $products = [
 ];
 
 $pattern = "%10s : %d\n";
+
+foreach ($products as $product => $items) {
+  echo ucfirst($product) . "\n";
+  foreach ($items as $item) {
+    printf(
+      $pattern,
+      $item,
+      $xml?->store?->$product?->$item
+    );
+  }
+}
