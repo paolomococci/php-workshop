@@ -10,3 +10,8 @@ $original = [
     'some_two',
     'some_one'
 ];
+
+$replacement = [
+    'some_2',
+    'some_1'
+];
