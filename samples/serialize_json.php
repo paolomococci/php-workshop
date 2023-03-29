@@ -37,3 +37,6 @@ $data = [
         'unit price' => 0.46,
     ],
 ];
+
+echo (new $allowed[$_GET['type'] ?? 'json'])->render($data);
+echo "\n";
