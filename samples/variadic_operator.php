@@ -7,7 +7,7 @@ class SomeOne {
     int $id,
     string $name
   ): void {
-      echo "ID: $id" . "Name: $name";
+      echo "ID: $id" . "Name: $name\n";
   }
 }
 
@@ -18,3 +18,5 @@ class SomeTwo extends SomeOne {
 }
 
 $someTwo = new SomeTwo();
+
+echo $someTwo->someone(123456789, 'something');
