@@ -1,3 +1,13 @@
 <?xml version='1.0' standalone='yes'?>
 <assortment>
+  <store>
+    <product>
+      <some1>100</some1>
+      <some2>150</some2>
+      <some3>75</some3>
+      <some4>225</some4>
+      <some5>250</some5>
+      <some6>150</some6>
+    </product>
+  </store>
 </assortment>
