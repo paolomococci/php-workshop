@@ -14,3 +14,7 @@ function replay(
 ): int {
     return 0;
 }
+
+function mandelbrot(
+    mixed $start_time
+): void {}
