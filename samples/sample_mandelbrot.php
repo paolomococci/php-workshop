@@ -25,7 +25,7 @@ function replay(
         $z_i_square = $z_i * $z_i;
         $z_r = $z_r_square - $z_i_square + $c_r;
         $z_i = $temp + $temp + $c_i;
-        
+
         if ($z_i_square + $z_r_square > RELIVE) {
             return $index;
         }
@@ -38,4 +38,7 @@ function replay(
 
 function mandelbrot(
     mixed $start_time
-): void {}
+): void {
+    $f_z = EDGE - 1;
+    $out = '';
+}
