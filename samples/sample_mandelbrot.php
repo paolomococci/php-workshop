@@ -58,4 +58,9 @@ function mandelbrot(
 
     printf("\n\n");
     echo $out;
+
+    $end_time = microtime(true);
+    $time = $end_time - $start_time;
+    printf("\n\n");
+    printf("processing time: %0.3f\n", $time);
 }
