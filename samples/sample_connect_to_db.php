@@ -21,3 +21,5 @@ try {
 } catch (PDOException $e) {
     echo "connection to database $db_name failed with the following message: " . $e->getMessage();
 }
+
+$conn = null;
