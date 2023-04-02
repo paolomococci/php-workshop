@@ -8,7 +8,8 @@ $start_time = microtime(true);
 
 function show_processing_time(mixed $start_time)
 {
-    
+    printf("\n\n");
+    printf("processing time: %0.5f\n", (microtime(true) - $start_time));
 }
 
 function random_alpha_underscore(): string
