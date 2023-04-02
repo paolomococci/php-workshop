@@ -64,3 +64,5 @@ function mandelbrot(
     printf("\n\n");
     printf("processing time: %0.3f\n", $time);
 }
+
+mandelbrot($start_time);
