@@ -39,6 +39,13 @@ function show(mixed $start_time): void
     foreach ($iter as $key => $value) {
         echo "$key\t$value\n";
     }
+
+    $iter->asort();
+    echo "\n";
+    echo "pseudo-random strings after sorting\n";
+    foreach ($iter as $key => $value) {
+        echo "$key\t$value\n";
+    }
 }
 
 show($start_time);
