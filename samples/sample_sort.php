@@ -2,12 +2,23 @@
 
 declare (strict_types = 1);
 
-define('MAX', 40);
+define('MAX', 80);
 
 $start_time = microtime(true);
 
-function show_processing_time() {}
+function show_processing_time(mixed $start_time)
+{
+    
+}
 
-function alpha_random() {}
+function random_alpha_underscore(): string
+{
+    return "";
+}
 
-function replay() {}
+function show(mixed $start_time): void
+{
+    
+}
+
+show($start_time);
