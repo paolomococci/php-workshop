@@ -41,4 +41,13 @@ function mandelbrot(
 ): void {
     $f_z = EDGE - 1;
     $out = '';
+
+    for ($ordinate = -$f_z; $ordinate < $f_z; $ordinate++) {
+        for ($abscissa = -$f_z; $abscissa < $f_z; $abscissa++) {
+            $out .= (replay($abscissa / EDGE, $ordinate / EDGE) == 0)
+            ? '1'
+            : '0';
+        }
+        $out .= "\n";
+    }
 }
