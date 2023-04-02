@@ -12,6 +12,12 @@ function replay(
     float $abscissa,
     float $ordinate
 ): int {
+    $c_r = $ordinate - 0.5;
+    $c_i = $abscissa;
+    $z_r = 0.0;
+    $z_i = 0.0;
+    $index = 0;
+    
     return 0;
 }
 
