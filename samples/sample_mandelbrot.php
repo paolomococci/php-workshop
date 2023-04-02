@@ -7,3 +7,10 @@ define('LOOPS', 4096);
 define('EDGE', 80.0);
 
 $start_time = microtime(true);
+
+function replay(
+    float $abscissa,
+    float $ordinate
+): int {
+    return 0;
+}
