@@ -8,6 +8,15 @@ define('EDGE', 80.0);
 
 $start_time = microtime(true);
 
+function show_processing_time(
+    mixed $start_time
+): void {
+    $end_time = microtime(true);
+    $time = $end_time - $start_time;
+    printf("\n\n");
+    printf("processing time: %0.3f\n", $time);
+}
+
 function replay(
     float $abscissa,
     float $ordinate
@@ -36,7 +45,7 @@ function replay(
     }
 }
 
-function mandelbrot(
+function mandelbrot_set(
     mixed $start_time
 ): void {
     $f_z = EDGE - 1;
@@ -59,10 +68,7 @@ function mandelbrot(
     printf("\n\n");
     echo $out;
 
-    $end_time = microtime(true);
-    $time = $end_time - $start_time;
-    printf("\n\n");
-    printf("processing time: %0.3f\n", $time);
+    show_processing_time($start_time);
 }
 
-mandelbrot($start_time);
+mandelbrot_set($start_time);
