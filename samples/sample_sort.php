@@ -9,3 +9,5 @@ $start_time = microtime(true);
 function show_processing_time() {}
 
 function alpha_random() {}
+
+function replay() {}
