@@ -14,7 +14,11 @@ function show_processing_time(mixed $start_time)
 
 function random_alpha_underscore(): string
 {
-    return "";
+    $alpha_underscore = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_';
+    return $alpha_underscore[rand(0, 26)] .
+        $alpha_underscore[rand(0, 26)] .
+        $alpha_underscore[rand(0, 26)] .
+        $alpha_underscore[rand(0, 26)];
 }
 
 function show(mixed $start_time): void
