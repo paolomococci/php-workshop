@@ -23,7 +23,16 @@ function random_alpha_underscore(): string
 
 function show(mixed $start_time): void
 {
-    
+    $iter = new ArrayIterator;
+    for ($index = 256; $index < MAX + 256; $index += 2) {
+        $key = sprintf('%04X', $index);
+        $iter->offsetSet($key, random_alpha_underscore());
+        $key = sprintf('%04X', $index + 1);
+        if (rand(1, 2) % 2 == 0) {
+            $iter->offsetSet($key, '_ABC');
+        }
+
+    }
 }
 
 show($start_time);
