@@ -46,7 +46,7 @@ function show(mixed $start_time): void
     foreach ($iter as $key => $value) {
         echo "$key\t$value\n";
     }
-    
+
     show_processing_time($start_time);
 }
 
