@@ -13,6 +13,11 @@ try {
         $user_name, 
         $password
     );
+    $conn->setAttribute(
+        PDO::ATTR_ERRMODE, 
+        PDO::ERRMODE_EXCEPTION
+    );
+    echo "connection to database $db_name was successful";
 } catch (PDOException $e) {
     echo "connection to database $db_name failed with the following message: " . $e->getMessage();
 }
