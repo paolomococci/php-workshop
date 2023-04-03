@@ -2,24 +2,27 @@
 
 declare (strict_types = 1);
 
-$server_name = $_ENV["DB_HOST"];
-$db_name = $_ENV["DB_DATABASE"];
-$user_name = $_ENV["DB_USERNAME"];
-$password = $_ENV["DB_PASSWORD"];
+$db_host = '127.0.0.1';
+$db_port = '3306';
+$db_charset = 'utf8';
+$db_database = "";
+$db_username = '';
+$db_password = '';
+
 
 try {
     $conn = new PDO(
-        "mysql:host=$server_name;dbname=$db_name", 
-        $user_name, 
-        $password
+        "mysql:host=$db_host;port=$db_port;charset=$db_charset;dbname=$db_database", 
+        $db_username, 
+        $db_password
     );
     $conn->setAttribute(
         PDO::ATTR_ERRMODE, 
         PDO::ERRMODE_EXCEPTION
     );
-    echo "connection to database $db_name was successful";
+    echo "connection to database $db_database was successful";
 } catch (PDOException $e) {
-    echo "connection to database $db_name failed with the following message: " . $e->getMessage();
+    echo "connection to database $db_database failed with the following message: " . $e->getMessage();
 }
 
 $conn = null;
