@@ -8,7 +8,7 @@ $lines = explode("\n", $values);
 $items = array();
 
 foreach ($lines as $line) {
-    $items[] = substr($line, strpos($line, '=')+1);
+    $items[] = substr($line, strpos($line, '=') + 1);
 }
 
 $rdbms = $items[0];
