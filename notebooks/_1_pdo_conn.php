@@ -20,8 +20,8 @@ try {
         PDO::ATTR_ERRMODE, 
         PDO::ERRMODE_EXCEPTION
     );
-    echo "connection to database $db_database was successful";
+    echo "connection to database $db_database was successful\n";
     $conn = null;
 } catch (PDOException $e) {
-    echo "connection to database $db_database failed with the following message: " . $e->getMessage();
+    echo "connection to database $db_database failed with the following message: " . $e->getMessage() . "\n";
 }
