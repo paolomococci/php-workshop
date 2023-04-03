@@ -18,3 +18,7 @@ $db_charset = $items[3];
 $db_database = $items[4];
 $db_username = $items[5];
 $db_password = $items[6];
+
+$show_tables_query = <<< 'EOD'
+SHOW TABLES;
+EOD;
