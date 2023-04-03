@@ -21,8 +21,7 @@ try {
         PDO::ERRMODE_EXCEPTION
     );
     echo "connection to database $db_database was successful";
+    $conn = null;
 } catch (PDOException $e) {
     echo "connection to database $db_database failed with the following message: " . $e->getMessage();
 }
-
-$conn = null;
