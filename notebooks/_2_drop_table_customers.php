@@ -2,12 +2,22 @@
 
 declare (strict_types = 1);
 
-$db_host = '127.0.0.1';
-$db_port = '3306';
-$db_charset = 'utf8';
-$db_database = 'notebook_hh_db_rc0';
-$db_username = '';
-$db_password = '';
+$values = file_get_contents("../.env");
+
+$lines = explode("\n", $values);
+$items = array();
+
+foreach ($lines as $line) {
+    $items[] = substr($line, strpos($line, '=') + 1);
+}
+
+$rdbms = $items[0];
+$db_host = $items[1];
+$db_port = $items[2];
+$db_charset = $items[3];
+$db_database = $items[4];
+$db_username = $items[5];
+$db_password = $items[6];
 
 $create_table_customers = <<< 'EOD'
 DROP TABLE IF EXISTS `customers`;
@@ -16,7 +26,7 @@ EOD;
 try {
 
     $conn = new PDO(
-        "mysql:host=$db_host;port=$db_port;charset=$db_charset;dbname=$db_database",
+        "$rdbms:host=$db_host;port=$db_port;charset=$db_charset;dbname=$db_database",
         $db_username,
         $db_password
     );
