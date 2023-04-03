@@ -2,10 +2,10 @@
 
 declare (strict_types = 1);
 
-$server_name = "127.0.0.1";
-$db_name = "sample";
-$user_name = "username";
-$password = "password";
+$server_name = $_ENV["DB_HOST"];
+$db_name = $_ENV["DB_DATABASE"];
+$user_name = $_ENV["DB_USERNAME"];
+$password = $_ENV["DB_PASSWORD"];
 
 try {
     $conn = new PDO(
