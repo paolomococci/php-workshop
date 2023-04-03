@@ -5,7 +5,7 @@ declare (strict_types = 1);
 $db_host = '127.0.0.1';
 $db_port = '3306';
 $db_charset = 'utf8';
-$db_database = "";
+$db_database = 'notebook_hh_db_rc0';
 $db_username = '';
 $db_password = '';
 
