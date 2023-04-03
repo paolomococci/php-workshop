@@ -10,3 +10,11 @@ $items = array();
 foreach ($lines as $line) {
     $items[] = substr($line, strpos($line, '='));
 }
+
+$rdbms = $items[0];
+$db_host = $items[1];
+$db_port = $items[2];
+$db_charset = $items[3];
+$db_database = $items[4];
+$db_username = $items[5];
+$db_password = $items[6];
